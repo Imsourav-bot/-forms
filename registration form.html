@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+  <style>
+       body{
+         font-family:Arial, Helvetica, sans-serif;
+         background-color: lightblue;
+       }
+       * {
+         box-sizing: border-box;
+         }
+         /* Add parting to containers*/
+         .container {
+           padding: 16px;
+           background-color: white;
+         }
+         /* Full-width input fields*/
+         input[type=text], input[type=password], input[type=email] {
+width: 100%;
+padding: 15px;
+margin: 5px, 0, 22px, 0;
+display: inline-block;
+border: none;
+background: #f1f1f1
+         }
+         input[type=text]:focus, input[type=password]:focus {
+         background-color: #dddd;
+         outline: none;
+         }
+         /* overwrite default styles of hr*/
+         hr{
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+         }
+         /*Set a style for submit button*/
+         .submitbtn {
+background-color: #4caf50;
+color: white;
+padding: 16px, 20px;
+margin: 8px, 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+         }
+         .submitbtn::hover {
+           opacity: 1;
+         }
+</style>
+  </head>
+  <body>
+    <div>
+    <form name="Registration Form">
+<h3 style="text-align: center;">Sign Up</h3>
+          <label>First Name :</label>
+          <br><input type="text" placeholder="First Name" name="fname" maxlength="50"/><br><br>
+<label>Last Name :</label>
+            <br><input type="text" placeholder="Last Name" name="laname" maxlength="50"/><br><br>
+
+              <label>Email :</label>
+              <br><input type="email" placeholder="example@gmail.com" name="email" maxlength="50"/><br><br>
+              
+              <label>Contact :</label>
+                <br><input type="text" placeholder="987654321" name="contact" maxlength="20"/><br><br>
+
+                  <label>Password :</label>
+                  <br><input type="password" placeholder="Password" name="password" maxlength="20"/><br><br>
+                  <label>Confirm Password :</label>
+                  <br><input type="Password" placeholder="Confirm Password" name=" Confirm Password" maxlength="20"/><br><br>
+                  <input type="submit" name="button" type="submit"/>
+                  <input type="reset" name="reset" type="reset"/>
+</div>
+</body>
+</head>
